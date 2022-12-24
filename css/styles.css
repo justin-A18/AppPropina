@@ -1,0 +1,286 @@
+:root{
+    --color1: hsl(0, 0%, 100%);
+    --color2: hsl(172, 67%, 45%);
+    --color3: hsl(186, 14%, 43%);
+    --color4: hsl(184, 14%, 56%);
+    --color5: hsl(185, 41%, 84%);
+    --color6: hsl(189, 41%, 97%);
+    --color7: hsl(183, 100%, 15%);
+    --color8:#ececec;
+    --font: 'Space Mono', monospace;
+}
+
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    background-color: var(--color5);
+}
+
+/* <-----------------------------------> */
+
+/* Header */
+
+.container__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title__principal{
+    display: flex;
+    font-size: 3rem;
+    color: var(--color3);
+    letter-spacing: 1rem;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+/* <-----------------------------------> */
+
+/* Main */
+
+.container__principal{
+    width: 90%;
+    height: 60vh;
+    padding: 2rem;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 1rem;
+    background-color: var(--color6);
+    justify-content: space-around;
+}
+
+/* <-----------------------------------> */
+
+/* Formularios */
+
+.container__forms{
+    gap: 2rem;
+    /* width: 45%; */
+    width: 100%;
+    display: flex;
+    padding-left: 1rem;
+    flex-direction: column;
+}
+
+.form__cuenta{
+    gap: 2rem;
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+}
+
+.form__cuenta input{
+    width: 34rem;
+    height: 4rem;
+    outline: none;
+    padding: 1rem;
+    font-size: 2.5rem;
+    text-align: right;
+    position: relative;
+    color: var(--color7);
+    font-family: var(--font);
+    border: thin solid transparent;
+    background-color: var(--color8);
+}
+
+.cuenta-icon{
+    top: 21rem;
+    width: 2rem;
+    height: 1.5rem;
+    position: absolute;
+}
+
+.cuenta-icon svg{
+    width: 2rem;
+}
+
+/* <---------------------------------> */
+
+.form__porcentaje-propinas{
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+}
+
+.form__porcentaje-propinas .buttons{
+    gap:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40rem;
+}
+
+.form__porcentaje-propinas button{
+    width: 10rem;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    color: var(--color6);
+    font-family: var(--font);
+    border: thin solid transparent;
+    background-color: var(--color7);
+    transition: background-color 200ms linear;
+}
+
+.form__porcentaje-propinas button:nth-child(3){
+    color: var(--color7);
+    background-color: var(--color2);
+}
+
+.form__porcentaje-propinas button:hover{
+    cursor: pointer;
+    color: var(--color7);
+    background-color: var(--color5);
+}
+
+.form__porcentaje-propinas input{
+    width: 10rem;
+    outline: none;
+    padding: .5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color7);
+    font-family: var(--font);
+    background-color: var(--color8);
+    border: thin solid transparent;
+}
+
+/* <-----------------------------------> */
+
+.numero__personas{
+    gap: 1rem;
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+}
+
+.numero__personas input{
+    width: 34rem;
+    height: 4rem;
+    padding: 1rem;
+    outline: none;
+    text-align: right;
+    font-size: 2.5rem;
+    position: relative;
+    color: var(--color7);
+    font-family: var(--font);
+    border: thin solid transparent;
+    background-color: var(--color8);
+}
+
+.icon-user{
+    position: absolute;
+    width: 2rem;
+    top: 48.5rem;
+    height: 1.5rem;
+}
+
+.icon-user svg{
+    width: 2rem;
+}
+    
+/* <-----------------------------------> */
+
+/* resultado */
+
+.container__card-resultado{
+    /* width: 45%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--color7);
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    color: var(--color8);
+}
+
+.card__tip-amount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tip-amount__text{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.tip-amount__text span:nth-child(2){
+    color: var(--color4);
+}
+
+.tip-amount__paragraph{
+    font-size: 3rem;
+    color: var(--color2);
+}
+
+/* <-----------------------------------> */
+
+.card__total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total__text{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+
+.total__text span:nth-child(2){
+    color: var(--color4);
+}
+
+.total__paragraph{
+    font-size: 3rem;
+    color: var(--color2);
+}
+
+/* Button */
+
+.reset{
+    width: 25rem;
+    height: 5rem;
+    margin: 0 auto;
+    display: block;
+    font-size: 2rem;
+    border-radius: .5rem;
+    color: var(--color7);
+    letter-spacing: .5rem;
+    font-family: var(--font);
+    text-transform: uppercase;
+    border: thin solid transparent;
+    background-color: var(--color2);
+    transition: background-color 200ms linear;
+}
+
+.reset:hover{
+    cursor: pointer;
+    background-color: var(--color5);
+}
+
+@media (max-width:770px) {
+    .container__principal{
+        gap: 2rem;
+        width: 85%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
